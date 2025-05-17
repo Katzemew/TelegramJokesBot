@@ -1,0 +1,14 @@
+# Ignore Python virtual environments
+.venv/
+
+# Ignore environment variables
+.env
+
+# Bytecode
+__pycache__/
+*.pyc
+
+# VS Code stuff
+.vscode/
+.ipynb_checkpoints/
+deployment/
