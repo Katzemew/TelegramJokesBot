@@ -29,10 +29,10 @@ def setup_llm_chain(topic="technology"):
     return prompt|llm|StrOutputParser()
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Hi! Mention me with a topic like '@Binary_Joke_Bot python' to get a joke ")
+    await update.message.reply_text("Hi! Mention me with a topic like '@The_Satire_Bot python' to get a joke ")
     
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Mention me with a topic like '@Binary_Joke_Bot python', to get some funny jokes")
+    await update.message.reply_text("Mention me with a topic like '@The_Satire_Bot python', to get some funny jokes")
     
 async def generate_joke(update: Update, context: ContextTypes.DEFAULT_TYPE, topic: str):
     await update.message.reply_text(f"Generating a joke about {topic}")
